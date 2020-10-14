@@ -36,7 +36,7 @@ class CalendarsController < ApplicationController
         today_plans.push(plan.plan) if plan.date == @todays_date + x
       end
 
-      days = { :month => (@todays_date + x).month, :date => (@todays_date+x).day, :plans => today_plans, :weeks => wdays[(@todays_date+x).strftime('%w').to_i]}
+      days = { month: (@todays_date + x).month, date: (@todays_date+x).day, plans: today_plans, weeks: wdays[(@todays_date+x).strftime('%w').to_i]}
 
 
 
